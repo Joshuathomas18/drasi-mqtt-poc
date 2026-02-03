@@ -4,14 +4,14 @@ This repository serves as a technical **Proof of Concept (PoC)** for the **LFX M
 
 It demonstrates a minimal, standalone implementation of a **Drasi Source** for MQTT, written in Rust.
 
-## 🎯 Architecture validated
+##  Architecture validated
 This prototype validates the critical components required to build `drasi-source-mqtt`:
 
 1.  **Async Event Loop:** Utilizes `tokio` and `rumqttc` to manage persistent broker connections without blocking the main thread.
 2.  **Declarative Mapping:** Implements a mapping logic that transforms raw JSON payloads from Edge devices into structured "Graph Elements" (Drasi's internal data model).
 3.  **Resilience:** Includes automatic reconnection logic to handle unstable IoT network conditions.
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - Rust (cargo) installed
@@ -37,7 +37,7 @@ This prototype validates the critical components required to build `drasi-source
     INFO: -> Ingested Graph Node: DrasiElement { id: "temp-sensor-01", ... }
     ```
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Language:** Rust (2021 Edition)
 - **Runtime:** Tokio (Async I/O)
 - **Protocol:** MQTT v3.1.1 (via rumqttc)
