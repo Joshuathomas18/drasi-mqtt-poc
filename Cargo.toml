@@ -1,0 +1,20 @@
+[package]
+name = "drasi-mqtt-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async MQTT Client
+rumqttc = "0.24"
+# Async Runtime (Required by Drasi)
+tokio = { version = "1", features = ["full"] }
+# JSON Parsing
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Error Handling
+anyhow = "1.0"
+# Logging
+log = "0.4"
+env_logger = "0.10"
+# Client ID generation
+uuid = { version = "1.0", features = ["v4"] }
